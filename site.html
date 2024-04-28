@@ -1,0 +1,157 @@
+<html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+    <div class="container">
+        <header>
+            <div class="logo1">
+                <img src="icon.png" alt="" />
+            </div>
+            <section class="about2">
+                <div class="contact-info">
+                    <p><b>Телефон:</b> +7 (926) 433-14-16</p>
+                    <div class="contact-info1">
+                        <button class="yellow-button" id="fill-form-button">Заполнить анкету</button>
+                    </div>
+                </div>
+                <h2><b>Гросс маркет</b></h2>
+            </section>
+			<script>
+            $(document).ready(function () {
+                $('#fill-form-button').click(function () {
+                    var name = $('#name').val();
+                    var email = $('#email').val();
+
+                    if (name === '' || email === '') {
+                        alert('Пожалуйста, заполните все обязательные поля.');
+                        return false;
+                    } else {
+                        window.location.href = 'site.html';
+                    }
+                });
+            });
+        </script>
+    </div>
+        </header>
+    <body>
+     <section class="hero">
+  <div class="hero-text">
+    <div class="slide" style="display: block;">
+      <h1 align="left"><br>У тебя</br>
+        <br>к этому</br>
+        <br>талант</h1>
+    </div>
+    <div class="slide" style="display: none;">
+      <h1 align="left"><br>У тебя</br>
+        <br>всё под</br>
+        <br>контролем</h1>
+    </div>
+  </div>
+  <div id="slider" class="slider_wrap">
+    <img src="foto.png" alt="" />
+    <img src="foto1.png" alt="" />
+	
+  </div>
+</section>
+
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-text .slide');
+  
+  function showSlide(slideIndex) {
+    slides.forEach((slide, index) => {
+      if (index === slideIndex) {
+        slide.style.display = 'block';
+      } else {
+        slide.style.display = 'none';
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  setInterval(nextSlide, 5000); // Change slide every 5 seconds
+</script>
+      <section class="about">
+    <h2>Вакансии в гросс маркете</h2>
+    <div class="image-row">
+        <img src="picture1.png" alt="" />
+        <img src="picture2.png" alt="" />
+        <img src="picture3.png" alt="" />
+    </div>
+    <div class="image-row">
+        <img src="picture4.png" alt="" />
+        <img src="picture5.png" alt="" />
+        <img src="picture6.png" alt="" />
+    </div>
+</section>
+      <section class="services">
+        <h2>Мы в инстаграмме</h2>
+<div class = "foto">
+<div class = "foto1">
+<div class = "foto2">
+<div class = "foto3">
+<div class = "foto4">
+
+      </section>
+	  <div class = "block"><div class ="text"><p>Показать ещё</p></div></div>
+	    <section class="services">
+        <h2>География</h2>
+		<div class="map">
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A740ea4fab5df5dd4a6a01683998d79777243cb9581692a1829b14bf929e3c1a1&amp;width=649&amp;height=486&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+  
+    <footer>
+	<div class="outer-block">
+    <div style="position: relative;">
+        <div style="position: absolute; left: 150; top: 150; font-family:Euclid Circular B" ><b>© Гросс маркет 2020</b></div>
+        <div style="position: absolute; right: 190; top: 147; font-family:Euclid Circular B"><b>Политика обработки персональных данных</b></div>
+		
+   
+    <script>
+        function showPopup() {
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div style="position: absolute; right: 190; top: 147; font-family:Euclid Circular B" onclick="showPopup()"><b>Политика обработки персональных данных</b></div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h1>Обработка данных</h1>
+			<h2 align="left">1. Что регулирует настоящая политика конфиденциальности</h2>
+            <p align="justify; font-family:Arial;"> Настоящая политика конфиденциальности (далее — Политика) действует в отношении всей информации, включая персональные данные в понимании применимого законодательства (далее — «Персональная информация»), которую ООО «Гросс маркет» и/или его аффилированные лица, в том числе входящие в одну группу с ООО «Гросс маркет» (далее — «Гросс маркет»), могут получить о Вас в процессе использования Вами любых сайтов, программ, продуктов и/или сервисов Гросс маркет (далее вместе  «Сервисы»), информацию о которых Гросс маркет может также получать Персональную информацию от своих партнеров (далее — «Партнеры»), сайты, программы, продукты или сервисы которых Вы используете (например, от рекламодателей Гросс маркет или службами такси). В таких случаях передача Персональной информации возможна только в случаях, установленных применимым законодательством, и осуществляется на основании специальных договоров между Гросс маркет и каждым из Партнеров.</p>
+<p style= "font-family:Arial; color:505050; text-align:justify;">Пожалуйста, обратите внимание, что использование любого из Сайтов и/или Сервисов может регулироваться дополнительными условиями, которые могут вносить в настоящую Политику изменения и/или дополнения, и/или иметь специальные условия в отношении персональной информации, размещенные в соответствующих разделах документов для таких Сайтов /или Сервисов.</p>
+            <h2 align="left">2. Кто обрабатывает информацию</h2>
+			<p align="justify; font-family:Arial;"> Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+			<h2 align="left">3. Какова цель данной Политики</h2>
+			<p align="justify; font-family:Arial;"> Защита Вашей Персональной информации и Вашей конфиденциальности чрезвычайно важны для Гросс маркета. Поэтому при использовании Вами Сайтов и Сервисов Гросс маркет защищает и обрабатывает Вашу Персональную информацию в строгом соответствии с применимым законодательством.</p>
+			<h2 align="left">4. Какую Персональную информацию о Вас собирает Гросс маркет</h2>
+			<p align="justify; font-family:Arial;"> Для обеспечения использования Вами Сайтов и Сервисов Ваша Персональная информация собирается и используется Яндексом, в том числе включая общество с ограниченной ответственностью «Гросс маркет», юридическое лицо, созданное по законодательству Российской Федерации и зарегистрированное по адресу: 123351, Россия, Москва, ул. Гроссова, д. 12 (ООО «Гросс маркет»), или его аффилированным лицом, предоставляющим соответствующий Сервис в иных юрисдикциях. С информацией о том, какое лицо предоставляет тот или иной Сервис, Вы можете ознакомиться в условиях использования соответствующего Сервиса.</p>
+			<button onclick="closePopup()">Закрыть</button>
+        </div>
+    </div>
+</body>
+    </div>
+  <div class="inner-block">
+  <div class =logo><img src="icon.png" alt="" /></div>
+  <div class = "name"><p>Гросс маркет</p></div>
+  <div class = "name1"><p>Поделиться</p></div> 
+  <div class = "sign1"><img src="facebook.png" alt="foto.png"><img src="vk.png" alt="foto.png">
+  </div>
+</div></div>
+    </footer>
+  </html>
